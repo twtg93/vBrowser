@@ -1,0 +1,62 @@
+@keyframes fadeout {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.CustomWindow {
+  position: absolute;
+  font-family: sans-serif;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  background-color: white;
+  border: 1px solid black;
+  animation-fill-mode: both;
+  animation-duration: 300ms;
+  animation-name: fadein;
+  --button-fade: rgba(127, 127, 127, 0.2);
+  
+  * {
+    box-sizing: border-box;
+    border: 0;
+    user-select: none;
+    font-size: 14px;
+  }
+
+  .topbar {
+    display: flex;
+  }
+
+  .topbar > div {
+    display: flex;
+  }
+
+  .appinfo {
+    flex-grow: 1;
+    padding-right: 50px;
+  }
+
+  /* Control Buttons */
+
+  button {
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    background-color: transparent;
+  }
+
+  button:hover {
+    background-color: var(--button-fade);
+  }
+
+  button[title="Close"]:hover {
+    --button-fade: rgb(232, 17, 35);
+    color: white;
+  }
+}

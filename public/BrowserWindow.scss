@@ -1,0 +1,85 @@
+:root {
+  --focus-color: white;
+  --bg-color: rgb(233, 233, 233);
+}
+
+.BrowserWindow {
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: calc(100% - 63px);
+    border: 0;
+  }
+
+  button {
+    border-radius: 999px;
+    min-width: 25px;
+  }
+
+  /* Styles for topbar */
+
+  .topbar {
+    background-color: var(--bg-color);
+  }
+
+  .control > button {
+    border-radius: 0;
+  }
+
+  .selected {
+    background-color: var(--focus-color);
+    border: 0;
+  }
+
+  .tab {
+    border-right: 1px solid gray;
+    border-radius: 10px 10px 0 0;
+    flex-grow: 1;
+    max-width: 10px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  img.icon {
+    height: 16px;
+  }
+
+  /* Styles for Searchbar */
+
+  .searchbar {
+    display: flex;
+    padding: 5px;
+    background-color: var(--focus-color);
+  }
+
+  .searchbox {
+    flex-grow: 1;
+    border-radius: 200px;
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(225, 225, 226);
+  }
+
+  /* Styles for Bookmarks */
+
+  .bookmarks {
+    border-bottom: 1px solid var(--bg-color);
+    background-color: var(--focus-color);
+    
+    button {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+}
+
+.PopupWindow {
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: calc(100% - 32px);
+    border: 0;
+  }
+}
