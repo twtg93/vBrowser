@@ -1,0 +1,31 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "virtual-browser",
+  "version": "0.0.1",
+  "description": "Emulate a browser within your browser!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "showdown": "^1.9.1",
+    "socket.io": "^2.3.0",
+    "puppeteer": "^4.0.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/nulldefined"
+  },
+  "license": "GNU",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
